@@ -17,7 +17,7 @@ import org.robolectric.annotation.Config;
 import static org.junit.Assert.assertTrue;
 
 @RunWith(RobolectricGradleTestRunner.class)
-@Config(constants = BuildConfig.class, sdk = 18)
+@Config(constants = BuildConfig.class, sdk = 21)
 @PowerMockIgnore({ "org.mockito.*", "org.robolectric.*", "android.*" })
 @PrepareForTest(Static.class)
 public class DeckardActivityTest {

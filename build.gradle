@@ -52,6 +52,7 @@ dependencies {
     testCompile "org.powermock:powermock-module-junit4:$powerMockVersion"
     testCompile "org.powermock:powermock-module-junit4-rule:$powerMockVersion"
     testCompile "org.powermock:powermock-api-mockito:$powerMockVersion"
-    testCompile "org.powermock:powermock-classloading-xstream:$powerMockVersion"
+    testCompile "org.ogce:xpp3:1.1.6"
+    testCompile "com.thoughtworks.xstream:xstream:1.4.2"
 
 }
