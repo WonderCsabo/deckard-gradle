@@ -30,7 +30,7 @@ android {
     }
 }
 
-def powerMockVersion =  '1.6.2'
+def powerMockVersion =  '1.6.4'
 
 dependencies {
     repositories {
@@ -48,7 +48,7 @@ dependencies {
     testCompile 'org.hamcrest:hamcrest-core:1.1'
     testCompile 'org.hamcrest:hamcrest-library:1.1'
     testCompile 'org.hamcrest:hamcrest-integration:1.1'
-    testCompile 'org.robolectric:robolectric:3.0-rc3'
+    testCompile 'org.robolectric:robolectric:3.0'
 
     // PowerMock
     testCompile "org.powermock:powermock-module-junit4:$powerMockVersion"
@@ -58,5 +58,5 @@ dependencies {
     compile ('com.thoughtworks.xstream:xstream:1.4.7') {
         exclude group: 'xmlpull', module: 'xmlpull'
     }
-    compile 'org.powermock:powermock-classloading-base:1.6.2'
+    compile "org.powermock:powermock-classloading-base:$powerMockVersion"
 }

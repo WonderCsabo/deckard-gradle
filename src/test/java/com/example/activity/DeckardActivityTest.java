@@ -33,6 +33,7 @@ public class DeckardActivityTest {
     @Test
     public void testStaticMocking() {
         PowerMockito.mockStatic(Static.class);
+
         Mockito.when(Static.staticMethod()).thenReturn("hello mock");
 
         assertTrue(Static.staticMethod().equals("hello mock"));
